@@ -1,5 +1,5 @@
 {
-  "name": "hyperwallet/sdk",
+  "name": "sleewok/hyperwallet-php-sdk",
   "description": "A library to manage users, transfer methods and payments through the Hyperwallet API",
   "type": "library",
   "keywords": [
