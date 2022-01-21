@@ -34,7 +34,7 @@ namespace Hyperwallet\Model;
  * @property string $stateProvince The state or province
  * @property string $country The country
  * @property string $postalCode The postal code
- * @property array $documents The array of documents returned for document upload
+ * @property HyperwalletVerificationDocumentCollection $documents The array of documents returned for document upload
  *
  * @package Hyperwallet\Model
  */
@@ -67,7 +67,7 @@ class BusinessStakeholder extends BaseModel {
     const GOVERNMENT_ID_TYPE_NATIONAL_ID_CARD = 'NATIONAL_ID_CARD';
 
     public static function FILTERS_ARRAY() {
-        return array('status','isBusinessContact','isDirector','isUltimateBeneficialOwner');
+        return array('status', 'createdBefore', 'createdAfter', 'sortBy', 'limit');
     }
 
     /**
